@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Senderify"
         mc:Ignorable="d"
-        Title="Sendirify" Height="550" Width="800" Icon="/arbolico_png.png" ResizeMode="NoResize">
+        WindowStartupLocation="CenterScreen"
+        Title="Sendirify" Height="550" Width="800" Icon="/arbolico_png.png" ResizeMode="NoResize" Closing="Sendirify_Closing">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="70*"/>
@@ -15,13 +16,14 @@
             <RowDefinition Height="40*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="32*"/>
-            <ColumnDefinition Width="11*"/>
-            <ColumnDefinition Width="74*"/>
-            <ColumnDefinition Width="11*"/>
-            <ColumnDefinition Width="32*"/>
+            <ColumnDefinition Width="160*"/>
+            <ColumnDefinition Width="55*"/>
+            <ColumnDefinition Width="249*"/>
+            <ColumnDefinition Width="122*"/>
+            <ColumnDefinition Width="55*"/>
+            <ColumnDefinition Width="160*"/>
         </Grid.ColumnDefinitions>
-        <Rectangle x:Name="fondo" Stroke="Black" Grid.ColumnSpan="5" Grid.RowSpan="5" Grid.Column="0" Grid.Row="0">
+        <Rectangle x:Name="fondo" Stroke="Black" Grid.ColumnSpan="6" Grid.RowSpan="5" Grid.Column="0" Grid.Row="0">
             <Rectangle.Fill>
                 <ImageBrush ImageSource="/foto_trans.png"/>
             </Rectangle.Fill>
@@ -30,30 +32,30 @@
 
 
         <Image x:Name="esi" Grid.Column="0" Grid.Row="0" Source="/esi_logo.png" Margin="21,26,24,38"/>
-        <Rectangle x:Name="login_cuadro" Grid.Column="1" Grid.Row="1" Stroke="Black" Grid.RowSpan="4" Fill="#FF26221F" StrokeEndLineCap="Round" StrokeStartLineCap="Round" StrokeLineJoin="Round" StrokeDashCap="Round" RadiusX="10" RadiusY="10" Margin="0,0,0,82" Grid.ColumnSpan="3"/>
-        <Label x:Name="txt_inicio" Grid.Column="2" Content="¡Bienvenido a Sendirify!" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Top" Foreground="White" Height="49" Width="348" FontSize="30" FontFamily="Comic Sans MS" Margin="0,23,0,0"/>
-        <TextBox x:Name="user_box"  Grid.Column="2" HorizontalAlignment="Center" Margin="0,115,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="268" Height="29" Grid.RowSpan="2" IsUndoEnabled="False" AutomationProperties.HelpText="Introduzca el usuario..." Text="Introduzca el usuario..." FontFamily="Comic Sans MS" FontStyle="Italic" Foreground="Gray" MouseEnter="user_box_MouseEnter" FontSize="16" MouseLeave="user_box_MouseLeave" KeyDown="user_box_KeyDown" TextChanged="user_box_TextChanged">
+        <Rectangle x:Name="login_cuadro" Grid.Column="1" Grid.Row="1" Stroke="Black" Grid.RowSpan="4" Fill="#FF26221F" StrokeEndLineCap="Round" StrokeStartLineCap="Round" StrokeLineJoin="Round" StrokeDashCap="Round" RadiusX="10" RadiusY="10" Margin="0,0,0,82" Grid.ColumnSpan="4"/>
+        <Label x:Name="txt_inicio" Grid.Column="2" Content="¡Bienvenido a Sendirify!" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Foreground="White" Height="49" Width="348" FontSize="30" FontFamily="Comic Sans MS" Margin="11,23,0,0" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="user_box"  Grid.Column="2" HorizontalAlignment="Left" Margin="51,115,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="268" Height="29" Grid.RowSpan="2" IsUndoEnabled="False" AutomationProperties.HelpText="Introduzca el usuario..." Text="Introduzca el usuario..." FontFamily="Comic Sans MS" FontStyle="Italic" Foreground="Gray" MouseEnter="user_box_MouseEnter" FontSize="16" MouseLeave="user_box_MouseLeave" KeyDown="user_box_KeyDown" TextChanged="user_box_TextChanged" Grid.ColumnSpan="2">
             <TextBox.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"></Setter>
                 </Style>
             </TextBox.Resources>
         </TextBox>
-        <TextBox x:Name="pass_box" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="2" TextWrapping="Wrap" Text="Introduzca la contraseña..." Width="268" Margin="0,41,0,0" Height="29" VerticalAlignment="Top" FontSize="16" FontFamily="Comic Sans MS" FontStyle="Italic" Foreground="Gray" MouseEnter="pass_box_MouseEnter" MouseLeave="pass_box_MouseLeave" KeyDown="pass_box_KeyDown" IsEnabled="False" TextChanged="pass_box_TextChanged">
+        <TextBox x:Name="pass_box" Grid.Column="2" HorizontalAlignment="Left" Grid.Row="2" TextWrapping="Wrap" Text="Introduzca la contraseña..." Width="268" Margin="51,41,0,0" Height="29" VerticalAlignment="Top" FontSize="16" FontFamily="Comic Sans MS" FontStyle="Italic" Foreground="Gray" MouseEnter="pass_box_MouseEnter" MouseLeave="pass_box_MouseLeave" KeyDown="pass_box_KeyDown" IsEnabled="False" TextChanged="pass_box_TextChanged" Grid.ColumnSpan="2">
             <TextBox.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"></Setter>
                 </Style>
             </TextBox.Resources>
         </TextBox>
-        <Button x:Name="btn_login" Content="Entrar" Grid.Column="2" Margin="25,23,25,24" Grid.Row="3" Background="#FF2F6539" Foreground="White" FontFamily="Comic Sans MS" FontSize="20" Click="btn_login_Click" MouseEnter="btn_login_MouseEnter" MouseLeave="btn_login_MouseLeave">
+        <Button Cursor="Hand" x:Name="btn_login" Content="Entrar" Grid.Column="2" Margin="25,23,25,24" Grid.Row="3" Background="#FF2F6539" Foreground="White" FontFamily="Comic Sans MS" FontSize="20" Click="btn_login_Click" MouseEnter="btn_login_MouseEnter" MouseLeave="btn_login_MouseLeave" Grid.ColumnSpan="2">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"></Setter>
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="main_helpbutton" Grid.Column="4" Content="Button" HorizontalAlignment="Left" Margin="108,10,0,0" VerticalAlignment="Top" Height="36" Width="42" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="main_helpbutton_Click">
+        <Button Cursor="Hand" x:Name="main_helpbutton" Grid.Column="5" Content="Button" VerticalAlignment="Center" Height="56" RenderTransformOrigin="0.552,0.661" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="main_helpbutton_Click" Margin="51,0,51,0">
             <Button.Background>
                 <ImageBrush ImageSource="/ayuda.png"/>
             </Button.Background>

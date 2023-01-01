@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\airon\OneDrive - Universidad de Castilla-La Mancha\Tercero\Primer Cuatrimestre\IPO\Lab\Práctica -Senderify .)\Senderify\Senderify\App.xaml
-4-1175475394
+5-412526294
 
-10-1132085351
+13-517423850
 194618410957
-MainWindow.xaml;src\Cerrar.xaml;src\Perfil.xaml;src\Rutas.xaml;
+MainWindow.xaml;src\Cerrar.xaml;src\pdis.xaml;src\Perfil.xaml;src\Rutas.xaml;
 
-True
+False
 

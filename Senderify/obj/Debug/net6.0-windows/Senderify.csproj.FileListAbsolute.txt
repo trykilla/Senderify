@@ -57,14 +57,12 @@ C:\Users\airon\OneDrive - Universidad de Castilla-La Mancha\Tercero\Primer Cuatr
 C:\Users\airon\OneDrive - Universidad de Castilla-La Mancha\Tercero\Primer Cuatrimestre\IPO\Lab\Práctica -Senderify .)\Senderify\Senderify\bin\Debug\net6.0-windows\Senderify.pdb
 C:\Users\airon\OneDrive - Universidad de Castilla-La Mancha\Tercero\Primer Cuatrimestre\IPO\Lab\Práctica -Senderify .)\Senderify\Senderify\obj\Debug\net6.0-windows\Senderify.csproj.AssemblyReference.cache
 C:\Users\airon\OneDrive - Universidad de Castilla-La Mancha\Tercero\Primer Cuatrimestre\IPO\Lab\Práctica -Senderify .)\Senderify\Senderify\obj\Debug\net6.0-windows\MainWindow.g.cs
-C:\Users\airon\OneDrive - Universidad de Castilla-La Mancha\Tercero\Primer Cuatrimestre\IPO\Lab\Práctica -Senderify .)\Senderify\Senderify\obj\Debug\net6.0-windows\src\Cerrar.g.cs
 C:\Users\airon\OneDrive - Universidad de Castilla-La Mancha\Tercero\Primer Cuatrimestre\IPO\Lab\Práctica -Senderify .)\Senderify\Senderify\obj\Debug\net6.0-windows\src\Perfil.g.cs
 C:\Users\airon\OneDrive - Universidad de Castilla-La Mancha\Tercero\Primer Cuatrimestre\IPO\Lab\Práctica -Senderify .)\Senderify\Senderify\obj\Debug\net6.0-windows\src\Rutas.g.cs
 C:\Users\airon\OneDrive - Universidad de Castilla-La Mancha\Tercero\Primer Cuatrimestre\IPO\Lab\Práctica -Senderify .)\Senderify\Senderify\obj\Debug\net6.0-windows\App.g.cs
 C:\Users\airon\OneDrive - Universidad de Castilla-La Mancha\Tercero\Primer Cuatrimestre\IPO\Lab\Práctica -Senderify .)\Senderify\Senderify\obj\Debug\net6.0-windows\Senderify_MarkupCompile.cache
 C:\Users\airon\OneDrive - Universidad de Castilla-La Mancha\Tercero\Primer Cuatrimestre\IPO\Lab\Práctica -Senderify .)\Senderify\Senderify\obj\Debug\net6.0-windows\Senderify_MarkupCompile.lref
 C:\Users\airon\OneDrive - Universidad de Castilla-La Mancha\Tercero\Primer Cuatrimestre\IPO\Lab\Práctica -Senderify .)\Senderify\Senderify\obj\Debug\net6.0-windows\MainWindow.baml
-C:\Users\airon\OneDrive - Universidad de Castilla-La Mancha\Tercero\Primer Cuatrimestre\IPO\Lab\Práctica -Senderify .)\Senderify\Senderify\obj\Debug\net6.0-windows\src\Cerrar.baml
 C:\Users\airon\OneDrive - Universidad de Castilla-La Mancha\Tercero\Primer Cuatrimestre\IPO\Lab\Práctica -Senderify .)\Senderify\Senderify\obj\Debug\net6.0-windows\src\Perfil.baml
 C:\Users\airon\OneDrive - Universidad de Castilla-La Mancha\Tercero\Primer Cuatrimestre\IPO\Lab\Práctica -Senderify .)\Senderify\Senderify\obj\Debug\net6.0-windows\src\Rutas.baml
 C:\Users\airon\OneDrive - Universidad de Castilla-La Mancha\Tercero\Primer Cuatrimestre\IPO\Lab\Práctica -Senderify .)\Senderify\Senderify\obj\Debug\net6.0-windows\Senderify.g.resources
@@ -104,3 +102,7 @@ C:\Users\ruben\OneDrive\Escritorio\Senderify\Senderify\obj\Debug\net6.0-windows\
 C:\Users\ruben\OneDrive\Escritorio\Senderify\Senderify\obj\Debug\net6.0-windows\Senderify.pdb
 C:\Users\ruben\OneDrive\Escritorio\Senderify\Senderify\obj\Debug\net6.0-windows\Senderify.genruntimeconfig.cache
 C:\Users\ruben\OneDrive\Escritorio\Senderify\Senderify\obj\Debug\net6.0-windows\ref\Senderify.dll
+C:\Users\airon\OneDrive - Universidad de Castilla-La Mancha\Tercero\Primer Cuatrimestre\IPO\Lab\Práctica -Senderify .)\Senderify\Senderify\obj\Debug\net6.0-windows\src\pdis.g.cs
+C:\Users\airon\OneDrive - Universidad de Castilla-La Mancha\Tercero\Primer Cuatrimestre\IPO\Lab\Práctica -Senderify .)\Senderify\Senderify\obj\Debug\net6.0-windows\src\pdis.baml
+C:\Users\airon\OneDrive - Universidad de Castilla-La Mancha\Tercero\Primer Cuatrimestre\IPO\Lab\Práctica -Senderify .)\Senderify\Senderify\obj\Debug\net6.0-windows\src\Cerrar.g.cs
+C:\Users\airon\OneDrive - Universidad de Castilla-La Mancha\Tercero\Primer Cuatrimestre\IPO\Lab\Práctica -Senderify .)\Senderify\Senderify\obj\Debug\net6.0-windows\src\Cerrar.baml

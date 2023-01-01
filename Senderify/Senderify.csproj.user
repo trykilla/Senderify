@@ -7,7 +7,7 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="src\Cerrar.xaml.cs">
+    <Compile Update="src\pdis.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="src\Perfil.xaml.cs">
@@ -22,6 +22,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="src\Cerrar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="src\pdis.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="src\Perfil.xaml">

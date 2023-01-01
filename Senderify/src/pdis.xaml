@@ -1,0 +1,51 @@
+﻿<Window x:Name="pdis1" x:Class="Senderify.src.pdis"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Senderify.src"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="PDIs" Height="719.6" Width="1080" Icon="/arbolico_png.png" ResizeMode="NoResize" Closing="pdis1_Closing">
+    <Grid>
+        <Rectangle x:Name="fondo_inmg" HorizontalAlignment="Center" Height="704" Stroke="Black" VerticalAlignment="Center" Width="1080">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/foto_trans.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <ListBox x:Name="list_view_pdis"  Background="#FF886C48" Margin="113,126,639,0" BorderBrush="#FF000513" Height="443" VerticalAlignment="Top"/>
+        <Rectangle x:Name="fondo_pdis" Margin="113,93,640,0" Stroke="Black" Fill="White" Height="33" VerticalAlignment="Top"/>
+        <ListBox x:Name="list_view_desc_pdis"  Background="#FF886C48" Margin="632,126,120,0" BorderBrush="#FF000513" Height="156" VerticalAlignment="Top"/>
+        <Rectangle x:Name="Fondo_form_Copy" Margin="633,93,120,0" Stroke="Black" Fill="White" Height="33" VerticalAlignment="Top"/>
+        <Label x:Name="Nombre_pdi" Margin="644,136,306,0" FontSize="16" FontFamily="Comic Sans MS" Content="Nombre:" Height="30" VerticalAlignment="Top"/>
+        <Label x:Name="desc_labl" Margin="644,190,320,0" RenderTransformOrigin="0.5,0.5" FontSize="16" FontFamily="Comic Sans MS" Content="Descripción:" Height="33" VerticalAlignment="Top">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.553"/>
+                    <RotateTransform Angle="-0.95"/>
+                    <TranslateTransform X="0.006" Y="0.363"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="tipo_lbl" Margin="644,236,320,0" RenderTransformOrigin="0.5,0.5" FontSize="16" FontFamily="Comic Sans MS" Content="Tipología:" Height="34" VerticalAlignment="Top">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.553"/>
+                    <RotateTransform Angle="-0.95"/>
+                    <TranslateTransform X="0.006" Y="0.363"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <TextBox x:Name="nom_box_pdi" TextWrapping="Wrap" Margin="757,143,135,0" FontSize="14" FontWeight="Bold" FontFamily="Comic Sans MS" Background="#FF886C48" BorderThickness="3,3,3,3" Height="23" VerticalAlignment="Top"/>
+        <TextBox x:Name="desc_box_pdi" TextWrapping="Wrap" Margin="757,171,135,0" FontSize="14" FontWeight="Bold" FontFamily="Comic Sans MS" Background="#FF886C48" BorderThickness="3,3,3,3" Height="71" VerticalAlignment="Top"/>
+        <TextBox x:Name="tipo_box_pdi" TextWrapping="Wrap" Margin="757,247,135,0" FontSize="14" FontWeight="Bold" FontFamily="Comic Sans MS" Background="#FF886C48" BorderThickness="3,3,3,3" Height="22" VerticalAlignment="Top"/>
+        <Label x:Name="pdis_lbl" Content="Puntos de Interés" HorizontalAlignment="Left" Margin="176,89,0,0" FontFamily="Comic Sans MS" FontSize="22" FontWeight="Bold" Height="41" VerticalAlignment="Top"/>
+        <Label x:Name="info_pdis" Content="Información" HorizontalAlignment="Left" Margin="728,89,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS" FontSize="22" FontWeight="Bold"/>
+        <Image HorizontalAlignment="Left" Height="171" Margin="633,317,0,0" VerticalAlignment="Top" Width="338"/>
+        <Image HorizontalAlignment="Left" Height="163" Margin="633,512,0,0" VerticalAlignment="Top" Width="338"/>
+        <Button x:Name="btn_anadir_pdi" Content="Añadir" HorizontalAlignment="Left" Margin="196,602,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS" FontSize="16" Background="White" Height="62" Width="162"/>
+
+    </Grid>
+</Window>

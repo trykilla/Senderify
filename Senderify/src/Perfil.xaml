@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Senderify.src"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="Perfil" Height="550" Width="800" Icon="/src/arbolico_png.png" ResizeMode="NoResize">
     <Grid>
         <Grid.ColumnDefinitions>
@@ -37,14 +38,19 @@
                 </Image.OpacityMask>
             </Image>
             <Image x:Name="img_perfil_rub" HorizontalAlignment="Left" Height="293" Margin="123,117,0,0" VerticalAlignment="Top" Width="235" Visibility="Hidden" Source="/src/rub_perfil.jpeg"/>
-            <Button x:Name="btn_next" Content="" Click="btn_next_Click" Margin="0,20,11,10" Grid.Column="1" Grid.Row="1">
+            <Button Cursor="Hand" x:Name="btn_next" Content="" Click="btn_next_Click" Margin="0,20,11,10" Grid.Column="1" Grid.Row="1" BorderBrush="{x:Null}">
                 <Button.Background>
                     <ImageBrush ImageSource="/src/flecha-derecha.png"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="perf_helpbutt" Grid.Column="1" Content="Button" HorizontalAlignment="Left" Margin="36,10,0,0" VerticalAlignment="Top" Height="50" Width="53" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="perf_helpbutt_Click">
+            <Button Cursor="Hand" x:Name="perf_helpbutt" HorizontalAlignment="Left" Margin="662,38,0,0" VerticalAlignment="Top" Height="50" Width="52" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="perf_helpbutt_Click" Grid.ColumnSpan="2" RenderTransformOrigin="0.135,0.481">
                 <Button.Background>
                     <ImageBrush ImageSource="/ayuda.png"/>
+                </Button.Background>
+            </Button>
+            <Button Cursor="Hand" x:Name="btn_cerrar_perf" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="30,31,0,0" VerticalAlignment="Top" Height="64" Width="60" BorderBrush="{x:Null}" RenderTransformOrigin="0.402,0.508" Click="btn_cerrar_perf_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/src/icono_cerrar_ses.png"/>
                 </Button.Background>
             </Button>
 

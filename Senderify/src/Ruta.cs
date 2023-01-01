@@ -23,8 +23,9 @@ namespace Senderify.src
         protected string pdi;
         protected string acceso_orig;
         protected string acceso_vuelta;
+        protected List<pdi> pdis;
 
-        public Ruta(string nombre, string inicio, string fin, string duracion, string fecha, string hora, string dificultad, string guia, string n_excursionistas, string comida_bebida, string precio, string material, string pdi, string acceso_orig, string acceso_vuelta)
+        public Ruta(string nombre, string inicio, string fin, string duracion, string fecha, string hora, string dificultad, string guia, string n_excursionistas, string comida_bebida, string precio, string material, string pdi, string acceso_orig, string acceso_vuelta,List<pdi> pdis)
         {
             this.nombre = nombre;
             this.inicio = inicio;
@@ -41,6 +42,7 @@ namespace Senderify.src
             this.pdi = pdi;
             this.acceso_orig = acceso_orig;
             this.acceso_vuelta = acceso_vuelta;
+            this.pdis = pdis;
         }
 
         public string Nombre { get => nombre; set => nombre = value; }
@@ -59,8 +61,9 @@ namespace Senderify.src
         public string Pdi { get => pdi; set => pdi = value; }
         public string Acceso_orig { get => acceso_orig; set => acceso_orig = value; }
         public string Acceso_vuelta { get => acceso_vuelta; set => acceso_vuelta = value; }
-        
-        
+
+        public List<pdi> Pdis { get => pdis; set => pdis = value; }
+
 
     }
 }

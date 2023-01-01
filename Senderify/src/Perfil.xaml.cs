@@ -24,8 +24,8 @@ namespace Senderify.src
         public Perfil()
         {
             InitializeComponent();
-
             
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -62,6 +62,19 @@ namespace Senderify.src
         {
             MessageBox.Show("Has seleccionado el botón de ayuda.\nEstás en la ventana de perfil, donde podrás visualizar " +
                 "las cualidades del administrador que haya iniciado sesión en el login.\nPara avanzar a la siguiente ventana pulse la flecha");
+        }
+
+        private void btn_cerrar_perf_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult result = MessageBox.Show("¿Seguro que quieres cerrar la sesión?", "Confirmación", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (result == MessageBoxResult.Yes)
+            {
+                MainWindow w = new MainWindow();
+                w.Visibility = Visibility.Visible;
+                this.Close();
+
+
+            }
         }
     }
 }

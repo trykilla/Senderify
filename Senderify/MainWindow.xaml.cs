@@ -185,6 +185,7 @@ namespace Senderify
                     p.Visibility = Visibility.Visible;
                     this.Visibility = Visibility.Hidden;
                     this.Close();
+
                     p.lista_datos.Items.Add("Nombre: "+names[i]);
                     p.lista_datos.Items.Add("Fecha de nacimiento: "+fecha[i]);
                     p.lista_datos.Items.Add("Edad: " + edades[i]);
@@ -234,6 +235,11 @@ namespace Senderify
         private void pass_box_TextChanged(object sender, TextChangedEventArgs e)
         {
             pass_box.Foreground = Brushes.Black;
+        }
+
+        private void Sendirify_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            
         }
     }
 }
